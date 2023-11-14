@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>lab2</groupId>
+	<artifactId>lab2</artifactId>
+	<version>SNAPSHOT 0.0.1</version>
+	<name>Laboratorio 2</name>
+	<description>App Hexagonal (Clean Architecture) Multi Module PersonAPP</description>
+	<packaging>pom</packaging>
+	<properties>
+		<java.version>11</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<revision>0.0.1-SNAPSHOT</revision>
+		<global.java.version>11</global.java.version>
+		<global.springframework.boot.version>2.7.11</global.springframework.boot.version>
+		<global.springframework.version>5.3.27</global.springframework.version>
+	</properties>
+	<modules>
+		<module>common</module>
+		<module>domain</module>
+		<module>Laboratorio-2/demo</module>
+		<module>maria-output-adapter</module>
+		<module>mongo-output-adapter</module>
+		<module>rest-input-adapter</module>
+		<module>cli-input-adapter</module>
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.26</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-to-slf4j</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+	</dependencies>
+</project>
