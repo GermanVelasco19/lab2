@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3cf9467c-550a-422c-ac6f-52b5d65764a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/example/demo/Laboratorio2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/example/demo/personaApp/application/port/in/PersonInputPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/example/demo/personaApp/application/port/out/PersonOutputPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/example/demo/personaApp/application/usecase/PersonUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/example/demo/Laboratorio2ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/java/co/edu/javeriana/as/personapp/PersonAppCli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/java/co/edu/javeriana/as/personapp/terminal/adapter/PersonaInputAdapterCli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/java/co/edu/javeriana/as/personapp/terminal/mapper/PersonaMapperCli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/java/co/edu/javeriana/as/personapp/terminal/menu/MenuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/java/co/edu/javeriana/as/personapp/terminal/menu/PersonaMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/java/co/edu/javeriana/as/personapp/terminal/model/PersonaModelCli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli-input-adapter/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/annotations/Adapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/annotations/Mapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/annotations/Port.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/annotations/UseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/exceptions/InvalidOptionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/exceptions/NoExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/co/edu/javeriana/as/personapp/common/setup/DatabaseOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/edu/javeriana/as/personapp/domain/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/edu/javeriana/as/personapp/domain/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/edu/javeriana/as/personapp/domain/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/edu/javeriana/as/personapp/domain/Profession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/edu/javeriana/as/personapp/domain/Study.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/adapter/PersonOutputAdapterMaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/entity/EstudiosEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/entity/EstudiosEntityPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/entity/PersonaEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/entity/ProfesionEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/entity/TelefonoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/mapper/EstudiosMapperMaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/mapper/PersonaMapperMaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/mapper/ProfesionMapperMaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/mapper/TelefonoMapperMaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mariadb/repository/PersonaRepositoryMaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/adapter/PersonOutputAdapterMongo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/document/EstudiosDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/document/PersonaDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/document/ProfesionDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/document/TelefonoDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/mapper/EstudiosMapperMongo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/mapper/PersonaMapperMongo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/mapper/ProfesionMapperMongo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/mapper/TelefonoMapperMongo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-output-adapter/src/main/java/co/edu/javeriana/as/personapp/mongo/repository/PersonaRepositoryMongo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/personapp-hexa-spring-boot/rest-input-adapter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/personapp-hexa-spring-boot/rest-input-adapter/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/PersonAppRestApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/adapter/PersonaInputAdapterRest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/controller/PersonaControllerV1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/mapper/PersonaMapperRest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/model/request/PersonaRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/model/response/PersonaResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/java/co/edu/javeriana/as/personapp/model/response/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-input-adapter/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/persona_ddl_maria.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/persona_ddl_mongo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/persona_dml_maria.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/persona_dml_mongo.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/personapp-hexa-spring-boot" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2YBY9tKDZjHJCDPZC1ZVh5gTXc1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.PersonAppCli">
+    <configuration name="PersonAppCli" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cli-input-adapter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.javeriana.as.personapp.PersonAppCli" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonAppRestApi" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rest-input-adapter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.javeriana.as.personapp.PersonAppRestApi" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cf9467c-550a-422c-ac6f-52b5d65764a8" name="Changes" comment="" />
+      <created>1700000293052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700000293052</updated>
+      <workItem from="1700000294375" duration="367000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
