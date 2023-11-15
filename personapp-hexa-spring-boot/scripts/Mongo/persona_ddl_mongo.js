@@ -1,4 +1,4 @@
-use admin
+use lab2db
 
 db.createUser({
   user: "persona_db",

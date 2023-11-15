@@ -1,0 +1,3 @@
+use lab2db
+
+db.createCollection("estudios")

@@ -2,8 +2,10 @@ package co.edu.javeriana.as.personapp.mariadb.mapper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import co.edu.javeriana.as.personapp.common.annotations.Adapter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import co.edu.javeriana.as.personapp.common.annotations.Mapper;
@@ -25,6 +27,9 @@ public class PersonaMapperMaria {
 	@Autowired
 	private TelefonoMapperMaria telefonoMapperMaria;
 
+	@Autowired
+	private  ProfesionMapperMaria profesionMapperMaria;
+
 	public PersonaEntity fromDomainToAdapter(Person person) {
 		PersonaEntity personaEntity = new PersonaEntity();
 		personaEntity.setCc(person.getIdentification());
@@ -45,12 +50,6 @@ public class PersonaMapperMaria {
 		return age != null && age >= 0 ? age : null;
 	}
 
-	private List<EstudiosEntity> validateEstudios(List<Study> studies) {
-		return studies != null && !studies.isEmpty()
-				? studies.stream().map(study -> estudiosMapperMaria.fromDomainToAdapter(study)).collect(Collectors.toList())
-				: new ArrayList<EstudiosEntity>();
-	}
-
 	private List<TelefonoEntity> validateTelefonos(List<Phone> phoneNumbers) {
 		return phoneNumbers != null && !phoneNumbers.isEmpty() ? phoneNumbers.stream()
 				.map(phone -> telefonoMapperMaria.fromDomainToAdapter(phone)).collect(Collectors.toList())
@@ -64,8 +63,8 @@ public class PersonaMapperMaria {
 		person.setLastName(personaEntity.getApellido());
 		person.setGender(validateGender(personaEntity.getGenero()));
 		person.setAge(validateAge(personaEntity.getEdad()));
-		person.setStudies(validateStudies(personaEntity.getEstudios()));
-		person.setPhoneNumbers(validatePhones(personaEntity.getTelefonos()));
+		person.setStudies(null);
+		person.setPhoneNumbers(null);
 		return person;
 	}
 
@@ -77,15 +76,24 @@ public class PersonaMapperMaria {
 		return edad != null && edad >= 0 ? edad : null;
 	}
 
-	private List<Study> validateStudies(List<EstudiosEntity> estudiosEntity) {
-		return estudiosEntity != null && !estudiosEntity.isEmpty() ? estudiosEntity.stream()
-				.map(estudio -> estudiosMapperMaria.fromAdapterToDomain(estudio)).collect(Collectors.toList())
-				: new ArrayList<Study>();
-	}
 
 	private List<Phone> validatePhones(List<TelefonoEntity> telefonoEntities) {
 		return telefonoEntities != null && !telefonoEntities.isEmpty() ? telefonoEntities.stream()
-				.map(telefono -> telefonoMapperMaria.fromAdapterToDomain(telefono)).collect(Collectors.toList())
+				.map(telefono -> telefonoMapperMaria.fromAdapterToDomainWithoutOwnerValidation(telefono))
+				.collect(Collectors.toList())
 				: new ArrayList<Phone>();
 	}
+
+	private List<EstudiosEntity> validateEstudios(List<Study> studies) {
+		return convertList(studies, study -> estudiosMapperMaria.fromDomainToAdapterWithOutVerify(study));
+	}
+
+
+
+	private <T, U> List<U> convertList(List<T> sourceList, Function<T, U> converter) {
+		return sourceList != null && !sourceList.isEmpty()
+				? sourceList.stream().map(converter).collect(Collectors.toList())
+				: new ArrayList<>();
+	}
+
 }

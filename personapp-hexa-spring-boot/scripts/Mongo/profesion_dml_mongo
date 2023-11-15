@@ -1,0 +1,9 @@
+use mydb;
+
+db.profesion.insertMany([
+    { id: 1, nom: 'Ingeniero', des: 'Profesión relacionada con la ingeniería.' },
+    { id: 2, nom: 'Médico', des: 'Profesión relacionada con la medicina.' },
+    { id: 3, nom: 'Abogado', des: 'Profesión relacionada con la ley y la jurisprudencia.' },
+    { id: 4, nom: 'Diseñador', des: 'Profesión relacionada con el diseño.' },
+    { id: 5, nom: 'Profesor', des: 'Profesión relacionada con la enseñanza.' }
+]);

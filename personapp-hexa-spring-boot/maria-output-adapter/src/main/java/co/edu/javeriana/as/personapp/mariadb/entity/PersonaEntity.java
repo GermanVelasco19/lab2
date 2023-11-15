@@ -18,7 +18,7 @@ import javax.persistence.NamedQuery;
  * @author aasanchez
  */
 @Entity
-@Table(name="persona", catalog = "persona_db", schema = "")
+@Table(name="persona", catalog = "mydb", schema = "")
 @NamedQueries({ @NamedQuery(name = "PersonaEntity.findAll", query = "SELECT p FROM PersonaEntity p"),
 		@NamedQuery(name = "PersonaEntity.findByCc", query = "SELECT p FROM PersonaEntity p WHERE p.cc = :cc"),
 		@NamedQuery(name = "PersonaEntity.findByNombre", query = "SELECT p FROM PersonaEntity p WHERE p.nombre = :nombre"),

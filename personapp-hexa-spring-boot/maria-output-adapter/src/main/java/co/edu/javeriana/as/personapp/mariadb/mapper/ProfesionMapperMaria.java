@@ -23,7 +23,7 @@ public class ProfesionMapperMaria {
 		profesionEntity.setId(profession.getIdentification());
 		profesionEntity.setNom(profession.getName());
 		profesionEntity.setDes(validateDes(profession.getDescription()));
-		profesionEntity.setEstudios(validateEstudios(profession.getStudies()));
+		profesionEntity.setEstudios(null);
 		return profesionEntity;
 	}
 
@@ -52,7 +52,15 @@ public class ProfesionMapperMaria {
 
 	private List<Study> validateStudies(List<EstudiosEntity> estudiosEntity) {
 		return estudiosEntity != null && !estudiosEntity.isEmpty() ? estudiosEntity.stream()
-				.map(estudio -> estudiosMapperMaria.fromAdapterToDomain(estudio)).collect(Collectors.toList())
+				.map(estudio -> estudiosMapperMaria.fromAdapterToDomainWithoutValidateStudies(estudio)).collect(Collectors.toList())
 				: new ArrayList<Study>();
+	}
+
+	public Profession fromAdapterToDomainWithoutStudiesValidation(ProfesionEntity profesionEntity){
+		Profession profession = new Profession();
+		profession.setIdentification(profesionEntity.getId());
+		profession.setName(profesionEntity.getNom());
+		profession.setDescription(profesionEntity.getDes());
+		return profession;
 	}
 }

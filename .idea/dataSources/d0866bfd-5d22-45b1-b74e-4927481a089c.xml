@@ -8,31 +8,128 @@
     <schema id="3" parent="1" name="config"/>
     <schema id="4" parent="1" name="lab2db"/>
     <schema id="5" parent="1" name="local"/>
-    <table id="6" parent="4" name="collectionlab2db"/>
-    <table id="7" parent="4" name="persona"/>
-    <column id="8" parent="7" name="_id">
+    <schema id="6" parent="1" name="mydb"/>
+    <table id="7" parent="4" name="collectionlab2db"/>
+    <table id="8" parent="4" name="estudios"/>
+    <table id="9" parent="4" name="persona"/>
+    <table id="10" parent="4" name="profesion"/>
+    <table id="11" parent="4" name="telefonos"/>
+    <table id="12" parent="6" name="estudios"/>
+    <column id="13" parent="8" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="14" parent="8" name="cc_per">
       <DasType>Int32|4s</DasType>
       <Position>1</Position>
     </column>
-    <column id="9" parent="7" name="_class">
+    <column id="15" parent="8" name="fecha">
+      <DasType>ISODate|91s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="16" parent="8" name="id_prof">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="17" parent="8" name="univer">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="18" parent="9" name="_id">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="19" parent="9" name="edad">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="20" parent="9" name="genero">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="21" parent="9" name="nombre">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="22" parent="9" name="_class">
       <DasType>String|12s</DasType>
       <Position>2</Position>
     </column>
-    <column id="10" parent="7" name="apellido">
+    <column id="23" parent="9" name="apellido">
       <DasType>String|12s</DasType>
       <Position>3</Position>
     </column>
-    <column id="11" parent="7" name="edad">
+    <column id="24" parent="10" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="25" parent="10" name="des">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="26" parent="10" name="id">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="27" parent="10" name="nom">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="28" parent="11" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="29" parent="11" name="duenio">
+      <DasType>Object|4999544s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="30" parent="11" name="num">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="31" parent="11" name="duenio.age">
+      <DasType>Int32|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="32" parent="11" name="oper">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="33" parent="11" name="duenio.firstName">
+      <DasType>String|12s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="34" parent="11" name="duenio.gender">
+      <DasType>String|12s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="35" parent="11" name="duenio.identification">
+      <DasType>Int32|4s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="36" parent="11" name="duenio.lastName">
+      <DasType>String|12s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="37" parent="12" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="38" parent="12" name="cc_per">
+      <DasType>Int32|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="39" parent="12" name="fecha">
+      <DasType>ISODate|91s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="40" parent="12" name="id_prof">
       <DasType>Int32|4s</DasType>
       <Position>4</Position>
     </column>
-    <column id="12" parent="7" name="genero">
+    <column id="41" parent="12" name="univer">
       <DasType>String|12s</DasType>
       <Position>5</Position>
-    </column>
-    <column id="13" parent="7" name="nombre">
-      <DasType>String|12s</DasType>
-      <Position>6</Position>
     </column>
   </database-model>
 </dataSource>

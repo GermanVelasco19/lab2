@@ -47,7 +47,27 @@ public class EstudiosMapperMaria {
 		study.setProfession(profesionMapperMaria.fromAdapterToDomain(estudiosEntity.getProfesion()));
 		study.setGraduationDate(validateGraduationDate(estudiosEntity.getFecha()));
 		study.setUniversityName(validateUniversityName(estudiosEntity.getUniver()));
-		return null;
+		return study;
+	}
+
+	public Study fromAdapterToDomainWithoutValidateStudies(EstudiosEntity estudiosEntity) {
+		Study study = new Study();
+		study.setPerson(personaMapperMaria.fromAdapterToDomain(estudiosEntity.getPersona()));
+		study.setProfession(null);
+		study.setGraduationDate(null);
+		study.setUniversityName(estudiosEntity.getUniver());
+		return study;
+	}
+
+	public EstudiosEntity fromDomainToAdapterWithOutVerify(Study study) {
+		EstudiosEntityPK estudioPK = new EstudiosEntityPK();
+		estudioPK.setCcPer(study.getPerson().getIdentification());
+		estudioPK.setIdProf(study.getProfession().getIdentification());
+		EstudiosEntity estudio = new EstudiosEntity();
+		estudio.setEstudiosPK(estudioPK);
+		estudio.setFecha(null);
+		estudio.setUniver(study.getUniversityName());
+		return estudio;
 	}
 
 	private LocalDate validateGraduationDate(Date fecha) {
@@ -57,4 +77,6 @@ public class EstudiosMapperMaria {
 	private String validateUniversityName(String univer) {
 		return univer != null ? univer : "";
 	}
+
+
 }

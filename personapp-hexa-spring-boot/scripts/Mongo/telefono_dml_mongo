@@ -1,0 +1,10 @@
+use lab2db
+
+db.telefonos.insertMany([
+    { num: 111111111, oper: 'Operador1', duenio: { identification: 123456789, firstName: 'Pepe', lastName: 'Perez', gender: 'MALE', age: 30 } },
+    { num: 222222222, oper: 'Operador2', duenio: { identification: 147258369, firstName: 'Pepita', lastName: 'Juarez', gender: 'FEMALE', age: 10 } },
+    { num: 333333333, oper: 'Operador3', duenio: { identification: 147258369, firstName: 'Pepita', lastName: 'Juarez', gender: 'FEMALE', age: 10 } },
+    { num: 444444444, oper: 'Operador4', duenio: { identification: 123456789, firstName: 'Pepe', lastName: 'Perez', gender: 'MALE', age: 30 } },
+    { num: 555555555, oper: 'Operador5', duenio: { identification: 963852741, firstName: 'Fede', lastName: 'Perez', gender: 'MALE', age: 18 } },
+    { num: 666666666, oper: 'Operador6', duenio: { identification: 321654987, firstName: 'Pepa', lastName: 'Juarez', gender: 'FEMALE', age: 30 } }
+]);

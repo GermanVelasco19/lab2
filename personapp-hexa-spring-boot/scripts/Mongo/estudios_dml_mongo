@@ -1,0 +1,9 @@
+use lab2db;
+
+db.estudios.insertMany([
+    { id_prof: 1, cc_per: 123456789, fecha: ISODate("2022-01-01"), univer: "Universidad A" },
+    { id_prof: 2, cc_per: 147258369, fecha: ISODate("2022-02-01"), univer: "Universidad B" },
+    { id_prof: 3, cc_per: 147258369, fecha: ISODate("2022-03-01"), univer: "Universidad C" },
+    { id_prof: 4, cc_per: 123456789, fecha: ISODate("2022-04-01"), univer: "Universidad D" },
+    { id_prof: 5, cc_per: 963852741, fecha: ISODate("2022-05-01"), univer: "Universidad E" }
+]);

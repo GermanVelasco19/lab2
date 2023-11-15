@@ -24,13 +24,14 @@ public class TelefonoMapperMaria {
 	}
 
 	private PersonaEntity validateDuenio(@NonNull Person owner) {
-		return owner != null ? personaMapperMaria.fromDomainToAdapter(owner) : new PersonaEntity();
+		return owner != null ? personaMapperMaria.fromDomainToAdapter(owner) : null;
 	}
 
 	public Phone fromAdapterToDomain(TelefonoEntity telefonoEntity) {
 		Phone phone = new Phone();
 		phone.setNumber(telefonoEntity.getNum());
 		phone.setCompany(telefonoEntity.getOper());
+		// Evitar llamada recursiva al validar el propietario aquí
 		phone.setOwner(validateOwner(telefonoEntity.getDuenio()));
 		return phone;
 	}
@@ -38,4 +39,12 @@ public class TelefonoMapperMaria {
 	private @NonNull Person validateOwner(PersonaEntity duenio) {
 		return duenio != null ? personaMapperMaria.fromAdapterToDomain(duenio) : new Person();
 	}
+	public Phone fromAdapterToDomainWithoutOwnerValidation(TelefonoEntity telefonoEntity) {
+		Phone phone = new Phone();
+		phone.setNumber(telefonoEntity.getNum());
+		phone.setCompany(telefonoEntity.getOper());
+		// No validamos el dueño en este método
+		return phone;
+	}
+
 }

@@ -1,25 +1,18 @@
 package co.edu.javeriana.as.personapp.mariadb.entity;
 
+import co.edu.javeriana.as.personapp.domain.Profession;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 /**
  *
  * @author aasanchez
  */
 @Entity
-@Table(name="estudios", catalog = "persona_db", schema = "")
+@Table(name="estudios", catalog = "mydb", schema = "")
 @NamedQueries({ @NamedQuery(name = "EstudiosEntity.findAll", query = "SELECT e FROM EstudiosEntity e"),
 		@NamedQuery(name = "EstudiosEntity.findByIdProf", query = "SELECT e FROM EstudiosEntity e WHERE e.estudiosEntityPK.idProf = :idProf"),
 		@NamedQuery(name = "EstudiosEntity.findByCcPer", query = "SELECT e FROM EstudiosEntity e WHERE e.estudiosEntityPK.ccPer = :ccPer"),
@@ -37,7 +30,7 @@ public class EstudiosEntity implements Serializable {
 	@JoinColumn(name = "cc_per", referencedColumnName = "cc", nullable = false, insertable = false, updatable = false)
 	@ManyToOne(optional = false)
 	private PersonaEntity persona;
-	@JoinColumn(name = "id_prof", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "id_prof", referencedColumnName = "id", nullable = true, insertable = false, updatable = false)
 	@ManyToOne(optional = false)
 	private ProfesionEntity profesion;
 
